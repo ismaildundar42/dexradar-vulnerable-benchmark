@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 1. KRİTİK / YÜKSEK (RCE & Memory Corruption) -->
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.111.0" />
+
+    <!-- 2. KRİTİK (Remote Code Execution / Deserialization) -->
+    <PackageReference Include="FastMember" Version="1.4.1" />
+
+    <!-- 3. YÜKSEK (Path Traversal) -->
+    <PackageReference Include="SharpZipLib" Version="0.86.0" />
+
+    <!-- 4. YÜKSEK (ReDoS) -->
+    <PackageReference Include="FluentValidation" Version="8.6.0" />
+
+    <!-- 5. ORTA / YÜKSEK (Security Token Bypass) -->
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.4" />
+
+    <!-- 6. ORTA (Request Smuggling) -->
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Core" Version="2.1.25" />
+
+    <!-- 7. GÜVENLİ PAKETLER -->
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+</Project>
