@@ -23,7 +23,7 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.4" />
 
     <!-- 6. ORTA (Request Smuggling) -->
-    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Core" Version="2.1.25" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Core" Version="8.0.10" />
 
     <!-- 7. GÜVENLİ PAKETLER -->
     <PackageReference Include="Dapper" Version="2.1.35" />
